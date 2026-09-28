@@ -7,9 +7,12 @@ html{
 :root {
     /*Variable for team color*/
     /*light ac3e37 main 770711 dark 470000*/
-    --main-color-light: #9c9a9a ;
+
+    /* #228B22 Forest Green added for Sprint 1  Leblanc Joseph*/
+
+    --main-color-light: #228B22 ;
     --main-color-primary: #9c9a9a ;
-    --main-color-dark: #228B22;
+    --main-color-dark: #000000;
     --main-color-text: #ffffff;
     --main-color-bright:#fcba03;
 
