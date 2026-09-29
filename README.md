@@ -6,11 +6,11 @@
 **Development Team**
 ---
 
-Business Client: BJ MacLean
+Business Client: Jose
 
 Lead Developer: Joseph LeBlanc
 
-Quality Control: BJ MacLean 
+Quality Control: Kay
 
 
 
