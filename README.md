@@ -21,25 +21,7 @@ Quality Control: Kay
 
 This application allows users to enter a player from the FIFA 2026 World Cup tournament and their stats. It will take those stats and create a player effectiveness score for each player. The stats that will be tracked are:
 
-Player Name
-
-Country
-
-Position
-
-Minutes Played
-
-Goals
-
-Assists
-
-Defensive Actions (Tackles + Blocks + Interceptions)
-
-Yellow Cards
-
-Red Cards
-
-Player Effectiveness
+Player Name, Country, Position, Minutes Played, Goals, Assists, Defensive Actions (Tackles + Blocks + Interceptions), Yellow Cards, Red Cards, and Player Effectiveness
 
 A weight value must be given for goals, assists, defensive actions, yellow cards and red cards (as shown in the example calculation below). 
 
@@ -61,27 +43,27 @@ Forest Green
 
 
 
-id			int	Unique identifier for database table
+id--------------------int--------Unique identifier for database table
 
-playerName		String	Player’s name
+playerName---------String----Player’s name
 
-country			String	The country the player plays for
+country--------------String----The country the player plays for
 
-position		String	The position the player plays (DEF, MID, FWD)
+position--------------String----The position the player plays (DEF, MID, FWD)
 
-minutesPlayed		int	Total minutes the player played in the tournament
+minutesPlayed-------int--------Total minutes the player played in the tournament
 
-goals			int	The number of goals the player scored in the tournament
+goals-----------------int--------The number of goals the player scored in the tournament
 
-assists			int	
+assists----------------int--------The number of assists the player made in the tournament	
 
-defensiveActions	int	The sum of the player’s tackles, blocks and interceptions in the tournament
+defensiveActions----int--------The sum of the player’s tackles, blocks and interceptions in the tournament
 
-yellowCards		int	The number of yellow cards the player received
+yellowCards----------int--------The number of yellow cards the player received
 
-redCards		int	The number of red cards the player received
+redCards-------------int--------The number of red cards the player received
 
-playerEffectiveness	Double	The calculated score of the players overall effectiveness for the tournament
+playerEffectiveness--Double---The calculated score of the players overall effectiveness for the tournament
 
 <br>
 
