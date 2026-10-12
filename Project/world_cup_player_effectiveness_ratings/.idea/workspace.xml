@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b1ce142e-71a4-4ec1-93bb-2f5dd0d09c6d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/hccis/squash/TheApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/hccis/squash/bo/SkillsAssessmentSquashTechnicalBO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/hccis/squash/bo/SkillsAssessmentSquashTechnicalValidationBO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/hccis/squash/controllers/BaseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/hccis/squash/controllers/PirateController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/hccis/squash/controllers/ReportController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/hccis/squash/controllers/SkillsAssessmentSquashTechnicalController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/hccis/squash/dao/SkillsAssessmentSquashTechnicalDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/hccis/squash/entity/ReportSquash.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/hccis/squash/entity/SkillsAssessmentSquashTechnicalDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/hccis/squash/entity/Translate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/hccis/squash/exception/AllAttributesNeededException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/hccis/squash/graphql/SkillsAssessmentSquashTechnicalGraphQLController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/hccis/squash/graphql/SkillsAssessmentSquashTechnicalInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/hccis/squash/jpa/entity/CodeValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/hccis/squash/jpa/entity/CodeValueId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/hccis/squash/jpa/entity/SkillsAssessmentSquashTechnical.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/hccis/squash/repositories/CodeValueRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/hccis/squash/repositories/SkillsAssessmentSquashTechnicalRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/hccis/squash/rest/SkillsAssessmentSquashTechnicalService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/hccis/squash/rest/TestSecureRestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/hccis/squash/security/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/hccis/squash/security/SecurityHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/hccis/squash/util/CisUtility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/hccis/squash/util/CisUtilityFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/hccis/squash/util/CisUtilityNetwork.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/hccis/squash/util/DatabaseUtility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/hccis/squash/util/Utility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/mysql/createDatabase1.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/mysql/initDB.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/mysql/instructions.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/mysql/populateDB.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/graphql/skillsAssessment.graphqls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/messages.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/messages_de.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/messages_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/cisStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/ic_launcherOFF.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/sample.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/sampleOFF.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/cis.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/error.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/head.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/navHeader.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/other/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/other/export.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/other/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pirate/translate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/report/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/report/reportSquashName.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/report/reportSquashScore.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/skillsassessmentsquashtechnical/add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/skillsassessmentsquashtechnical/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/skillsassessmentsquashtechnical/listedit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ca/hccis/squash/bo/SkillsAssessmentSquashTechnicalBOTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ca/hccis/squash/rest/SkillsAssessmentSquashTechnicalServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/mysql/createDatabase1.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/mysql/initDB.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/mysql/instructions.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/mysql/populateDB.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/graphql/skillsAssessment.graphqls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/messages.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/messages_de.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/messages_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/cisStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/ic_launcherOFF.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/sample.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/sampleOFF.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/cis.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/error.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/head.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/navHeader.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/other/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/other/export.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/other/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/pirate/translate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/report/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/report/reportSquashName.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/report/reportSquashScore.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/skillsassessmentsquashtechnical/add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/skillsassessmentsquashtechnical/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/skillsassessmentsquashtechnical/listedit.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="3JdJMdJFUs5xbisJxGGMiV1d992" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Database Script..executor": "Run",
+    "Database Script.createDatabase1.sql.executor": "Run",
+    "Database Script.createPlayerEffectivenessRating.sql.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.TheApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Blue/Documents/GitHub/cis2232_f26_project_LeBlanc_Joseph/Project/world_cup_player_effectiveness_ratings",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ],
+    "RunConfigurationTargetLRU": [
+      "d4eb45de-1c00-4a73-8c34-45fc4775bb30",
+      "85389fc4-be2d-4323-9100-ad0758315195"
+    ]
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.TheApplication">
+    <configuration type="DatabaseScript" editBeforeRun="true">
+      <script-file value="$PROJECT_DIR$/src/main/resources/db/mysql/createDatabase1.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="d4eb45de-1c00-4a73-8c34-45fc4775bb30" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TheApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="World Cup Ratings" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ca.hccis.squash.TheApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10968.63" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10968.63" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b1ce142e-71a4-4ec1-93bb-2f5dd0d09c6d" name="Changes" comment="" />
+      <created>1789984964085</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1789984964085</updated>
+      <workItem from="1789985761492" duration="149000" />
+      <workItem from="1789985917959" duration="723000" />
+      <workItem from="1789993125114" duration="14000" />
+      <workItem from="1789993164692" duration="850000" />
+      <workItem from="1789994360786" duration="13000" />
+      <workItem from="1790377733636" duration="11000" />
+      <workItem from="1790377756996" duration="3000" />
+      <workItem from="1790378296336" duration="2761000" />
+      <workItem from="1790633390804" duration="166000" />
+      <workItem from="1790633564288" duration="5020000" />
+      <workItem from="1790639029420" duration="716000" />
+      <workItem from="1790639761902" duration="94000" />
+      <workItem from="1790981149549" duration="71000" />
+      <workItem from="1791703011789" duration="125000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
