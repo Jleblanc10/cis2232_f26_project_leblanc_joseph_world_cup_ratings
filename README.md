@@ -102,7 +102,13 @@ playerEffectiveness--Double---The calculated score of the players overall effect
 
 <br>
 
-## Report Details
+## Player Effectiveness Comparison Report
 
-To be determined in future sprint.
+Enter the maximum number of players to display in the report. The user can choose how many of the highest-rated players to include in the results.
+The report will retrieve and rank players by their overall effectiveness score, displaying the highest-rated players up to the selected limit.
+On the report results page, display the player name, country, position, and overall effectiveness score.
+
+Include a horizontal bar chart comparing the effectiveness scores of the selected players. The vertical axis will display player names, and the horizontal axis will display their overall effectiveness scores. Players will be displayed from highest to lowest effectiveness. The report results will also be written to a file.
+
+
 
