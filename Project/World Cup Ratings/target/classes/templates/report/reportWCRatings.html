@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Cup Player Effectiveness Ratings</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #000000;
+        }
+
+        h1 {
+            background-color: #228B22;
+            color: #ffed98;
+            text-align: center;
+            padding: 20px;
+            margin: 0 0 25px 0;
+            border-radius: 6px;
+        }
+
+        .report-container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        .report-form {
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        input[type="number"] {
+            padding: 8px;
+            width: 80px;
+        }
+
+        button {
+            padding: 9px 16px;
+            margin-left: 8px;
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+
+        th {
+            background-color: #e8e8e8;
+        }
+
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            height: 600px;
+            margin: 35px auto;
+        }
+
+        .no-results {
+            text-align: center;
+            margin: 25px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="report-container">
+
+    <h1>World Cup Player Effectiveness Ratings</h1>
+
+    <form class="report-form"
+          th:action="@{/report/reportWCRatings}"
+          th:object="${wcReportRatings}"
+          method="post">
+
+        <label for="limit">Number of players to display:</label>
+
+        <input type="number"
+               id="limit"
+               th:field="*{limit}"
+               min="1"
+               max="50"
+               required>
+
+        <button type="submit">Generate Report</button>
+    </form>
+
+    <div th:if="${wcReportRatings.players != null
+                 and !wcReportRatings.players.isEmpty()}">
+
+        <h2>Player Results</h2>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Player Name</th>
+                <th>Country</th>
+                <th>Position</th>
+                <th>Effectiveness</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr th:each="player : ${wcReportRatings.players}">
+                <td th:text="${player.playerName}"></td>
+                <td th:text="${player.country}"></td>
+                <td th:text="${player.position}"></td>
+                <td th:text="${#numbers.formatDecimal(
+                        player.playerEffectiveness, 1, 2)}"></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h2>Player Effectiveness Chart</h2>
+
+        <div class="chart-container">
+            <canvas id="ratingsChart"></canvas>
+        </div>
+
+        <script th:inline="javascript">
+            const players = /*[[${wcReportRatings.players}]]*/ [];
+
+            const playerNames = players.map(
+                player => player.playerName
+            );
+
+            const effectivenessScores = players.map(
+                player => player.playerEffectiveness
+            );
+
+            const ctx = document.getElementById('ratingsChart');
+
+            new Chart(ctx, {
+                type: 'bar',
+
+                data: {
+                    labels: playerNames,
+
+                    datasets: [{
+                        label: 'Player Effectiveness',
+                        data: effectivenessScores
+                    }]
+                },
+
+                options: {
+                    indexAxis: 'y',
+
+                    responsive: true,
+                    maintainAspectRatio: false,
+
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Effectiveness Score'
+                            }
+                        },
+
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Players'
+                            }
+                        }
+                    }
+                }
+            });
+        </script>
+
+    </div>
+
+    <div class="no-results"
+         th:if="${wcReportRatings.players == null
+                 or wcReportRatings.players.isEmpty()}">
+
+        <p>No player ratings were found.</p>
+
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+WORLD CUP PLAYER EFFECTIVENESS RATINGS
+=======================================
+
+Report Generated: 2026-10-30 21:27:06
+Players Displayed: 10
+
+Player Name               Country              Position     Effectiveness
+--------------------------------------------------------------------------
+Pape Gueye                Senegal              6                     1.88
+Rodri                     Spain                6                     1.76
+Timothy Castagne          Belgium              2                     1.48
+Kylian Mbappe             France               8                     1.44
+Harry Kane                England              8                     1.43
+Issa Diop                 Morocco              3                     1.40
+Enzo Fernandez            Argentina            6                     1.38
+João Palhinha             Portugal             6                     1.35
+Dayot Upamecano           France               3                     1.30
+Lionel Messi              Argentina            8                     1.22
