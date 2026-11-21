@@ -1,21 +1,13 @@
-/**
- * Ratings Report
- * @author LeBlanc Joseph
- * @since 2026-10-25
- */
+
 package ca.hccis.wc.entity;
 
 import java.util.ArrayList;
+import java.util.List;
 
-/**
- * Holds the information required for the World Cup
- * Player Effectiveness Ratings report.
- */
 public class WCReportRatings {
 
     private int limit = 10;
-
-    private ArrayList<Player> players = new ArrayList<>();
+    private List<Player> players = new ArrayList<>();
 
     public WCReportRatings() {
     }
@@ -28,11 +20,11 @@ public class WCReportRatings {
         this.limit = limit;
     }
 
-    public ArrayList<Player> getPlayers() {
+    public List<Player> getPlayers() {
         return players;
     }
 
-    public void setPlayers(ArrayList<Player> players) {
+    public void setPlayers(List<Player> players) {
         this.players = players;
     }
 }

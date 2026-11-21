@@ -1,8 +1,4 @@
-/**
- * Report Controller.
- * @author LeBlanc Joseph
- * @since 2026-10-25
- */
+
 package ca.hccis.wc.controllers;
 
 import ca.hccis.wc.bo.WCRatingsBO;
@@ -25,7 +21,11 @@ import java.time.format.DateTimeFormatter;
 @Controller
 public class WCReportController {
 
-    private final WCRatingsBO wcRatingsBO = new WCRatingsBO();
+    private final WCRatingsBO wcRatingsBO;
+
+    public WCReportController(WCRatingsBO wcRatingsBO) {
+        this.wcRatingsBO = wcRatingsBO;
+    }
 
     private static final Path REPORT_DIRECTORY =
             Path.of("reports");
@@ -47,7 +47,6 @@ public class WCReportController {
      * exporting the results to a text file,
      * and returning the completed report to the Thymeleaf view.
      */
-
     @PostMapping("/report/reportWCRatings")
     public String generateReport(
             @ModelAttribute("wcReportRatings")
@@ -92,9 +91,7 @@ public class WCReportController {
 
     /**
      * Writes the generated report to a file.
-     * report/reportWCRatings
      */
-
     private void writeReportToFile(
             WCReportRatings wcReportRatings) throws IOException {
 
@@ -151,6 +148,7 @@ public class WCReportController {
                 report.toString(),
                 StandardCharsets.UTF_8
         );
+
         System.out.println("Report successfully written.");
     }
 }

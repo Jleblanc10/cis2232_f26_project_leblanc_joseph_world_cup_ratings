@@ -1,26 +1,56 @@
 
 package ca.hccis.wc.entity;
 
+import jakarta.persistence.*;
+import jakarta.validation.constraints.*;
+
 /**
  * Player Entity
+ *
+ * Represents a player's World Cup effectiveness rating.
+ *
  * @author LeBlanc Joseph
- * @since 2026-10-24
+ * @since 2026-11-20
+ * Updated for sprint 3
  */
+@Entity
+@Table(name = "PlayerEffectivenessRatings")
 public class Player {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
+    @NotBlank(message = "Assessment date is required")
     private String assessmentDate;
+
     private String createdDateTime;
 
+    @NotBlank(message = "Player name is required")
     private String playerName;
+
+    @NotBlank(message = "Country is required")
     private String country;
+
+    @NotBlank(message = "Position is required")
     private String position;
 
+    @Min(value = 1, message = "Minutes played must be greater than zero")
     private int minutesPlayed;
+
+    @Min(value = 0, message = "Goals cannot be negative")
     private int goals;
+
+    @Min(value = 0, message = "Assists cannot be negative")
     private int assists;
+
+    @Min(value = 0, message = "Defensive actions cannot be negative")
     private int defensiveActions;
+
+    @Min(value = 0, message = "Yellow cards cannot be negative")
     private int yellowCards;
+
+    @Min(value = 0, message = "Red cards cannot be negative")
     private int redCards;
 
     private double offensiveContribution;

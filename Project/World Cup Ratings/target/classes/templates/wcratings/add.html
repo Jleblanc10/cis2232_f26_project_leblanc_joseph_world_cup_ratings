@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Player Rating</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+
+<div class="container crud-page">
+
+    <h1>Add Player Rating</h1>
+
+    <form th:action="@{/wcratings/add}"
+          th:object="${player}"
+          method="post">
+
+        <div>
+            <label for="assessmentDate">Assessment Date</label>
+            <input type="date" id="assessmentDate" th:field="*{assessmentDate}">
+            <span class="error"
+                  th:if="${#fields.hasErrors('assessmentDate')}"
+                  th:errors="*{assessmentDate}"></span>
+        </div>
+
+        <div>
+            <label for="playerName">Player Name</label>
+            <input type="text" id="playerName" th:field="*{playerName}">
+            <span class="error"
+                  th:if="${#fields.hasErrors('playerName')}"
+                  th:errors="*{playerName}"></span>
+        </div>
+
+        <div>
+            <label for="country">Country</label>
+            <input type="text" id="country" th:field="*{country}">
+            <span class="error"
+                  th:if="${#fields.hasErrors('country')}"
+                  th:errors="*{country}"></span>
+        </div>
+
+        <div>
+            <label for="position">Position</label>
+            <select id="position" th:field="*{position}">
+                <option value="">-- Select Position --</option>
+                <option value="Forward">Forward</option>
+                <option value="Midfielder">Midfielder</option>
+                <option value="Defender">Defender</option>
+                <option value="Goalkeeper">Goalkeeper</option>
+            </select>
+            <span class="error"
+                  th:if="${#fields.hasErrors('position')}"
+                  th:errors="*{position}"></span>
+        </div>
+
+        <div>
+            <label for="minutesPlayed">Minutes Played</label>
+            <input type="number" id="minutesPlayed"
+                   th:field="*{minutesPlayed}" min="1">
+            <span class="error"
+                  th:if="${#fields.hasErrors('minutesPlayed')}"
+                  th:errors="*{minutesPlayed}"></span>
+        </div>
+
+        <div>
+            <label for="goals">Goals</label>
+            <input type="number" id="goals" th:field="*{goals}" min="0">
+            <span class="error"
+                  th:if="${#fields.hasErrors('goals')}"
+                  th:errors="*{goals}"></span>
+        </div>
+
+        <div>
+            <label for="assists">Assists</label>
+            <input type="number" id="assists" th:field="*{assists}" min="0">
+            <span class="error"
+                  th:if="${#fields.hasErrors('assists')}"
+                  th:errors="*{assists}"></span>
+        </div>
+
+        <div>
+            <label for="defensiveActions">Defensive Actions</label>
+            <input type="number" id="defensiveActions"
+                   th:field="*{defensiveActions}" min="0">
+            <span class="error"
+                  th:if="${#fields.hasErrors('defensiveActions')}"
+                  th:errors="*{defensiveActions}"></span>
+        </div>
+
+        <div>
+            <label for="yellowCards">Yellow Cards</label>
+            <input type="number" id="yellowCards"
+                   th:field="*{yellowCards}" min="0">
+            <span class="error"
+                  th:if="${#fields.hasErrors('yellowCards')}"
+                  th:errors="*{yellowCards}"></span>
+        </div>
+
+        <div>
+            <label for="redCards">Red Cards</label>
+            <input type="number" id="redCards"
+                   th:field="*{redCards}" min="0">
+            <span class="error"
+                  th:if="${#fields.hasErrors('redCards')}"
+                  th:errors="*{redCards}"></span>
+        </div>
+
+        <button type="submit">Save Player</button>
+        <a th:href="@{/wcratings}">Cancel</a>
+
+    </form>
+
+</div>
+
+</body>
+</html>

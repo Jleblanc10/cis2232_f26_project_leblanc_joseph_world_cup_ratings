@@ -5,10 +5,6 @@ html{
 }
 
 :root {
-    /*Variable for team color*/
-    /*light ac3e37 main 770711 dark 470000*/
-
-    /* #228B22 Forest Green added for Sprint 1  Leblanc Joseph*/
 
     --main-color-light: #228B22 ;
     --main-color-primary: #9c9a9a ;
@@ -18,20 +14,16 @@ html{
 
 }
 
-/*input:not(.hidden){
-    display:inline-block;
-    float:right
-}*/
+
 .cd{
     color:#F00!important;
-/*    font-weight:bold;*/
-/*    margin-bottom:-48px*/
+
 }
 label{
     margin-right:8px
 }
 
-/*Make body height 100% so that footer stays at the bottom and position relative to the footer*/
+
 body {
     position: relative;
     height: 100%;
@@ -56,7 +48,7 @@ tr:nth-child(even){
     padding:0 32px 0 0
 }
 h2{
-    /*    margin-bottom:-10px!important*/
+
 }
 table{
     padding:0!important;
@@ -116,7 +108,7 @@ table{
     background: var(--main-color-dark);
     color: var(--main-color-text);
     bottom: 0;
-    /*    position:absolute;*/
+
     width:100%
 }
 
@@ -128,7 +120,7 @@ table{
     margin: 0 auto
 }
 
-/*drop down link*/
+
 .ddl{
     margin:0 8px 0 8px;
     font-size:28px
@@ -337,3 +329,128 @@ Arrange invoice list tittle and add button
 .tableStyles td:last-child {
     padding-right: 10px;
 }
+
+
+
+/* World Cup Ratings CRUD theme */
+
+.crud-page {
+    max-width: 1400px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+    color: #000;
+    font-family: Arial, sans-serif;
+}
+
+.crud-page h1 {
+    background-color: #228B22;
+    color: #ffed98 !important;
+    text-align: center;
+    padding: 20px;
+    margin: 0 0 25px 0;
+    border-radius: 6px;
+}
+
+.crud-page h2 {
+    color: #228B22 !important;
+}
+
+/* Table */
+
+.crud-page table {
+    width: 100%;
+    display: table !important;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.crud-page th,
+.crud-page td {
+    padding: 10px !important;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.crud-page th {
+    background-color: #e8e8e8;
+    color: #000 !important;
+}
+
+.crud-page tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+/* Forms */
+
+.crud-page label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.crud-page input,
+.crud-page select {
+    padding: 9px;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: white;
+    color: #000;
+}
+
+.crud-page form div {
+    margin-bottom: 18px;
+}
+
+/* Buttons */
+
+.crud-page button,
+.crud-page .button {
+    display: inline-block;
+    padding: 9px 16px;
+    margin: 8px 5px 8px 0;
+    background-color: #228B22;
+    color: #ffed98 !important;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.crud-page button:hover,
+.crud-page .button:hover {
+    background-color: #176b24;
+}
+
+/* Validation */
+
+.crud-page .error {
+    display: block;
+    color: #b00020 !important;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* Responsive tables */
+
+.crud-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .crud-page {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .crud-page table {
+        min-width: 950px;
+    }
+}
+

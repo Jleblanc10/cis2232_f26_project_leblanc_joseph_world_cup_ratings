@@ -1,18 +1,30 @@
 WORLD CUP PLAYER EFFECTIVENESS RATINGS
 =======================================
 
-Report Generated: 2026-10-30 21:27:06
-Players Displayed: 10
+Report Generated: 2026-11-20 23:29:27
+Players Displayed: 22
 
 Player Name               Country              Position     Effectiveness
 --------------------------------------------------------------------------
-Pape Gueye                Senegal              6                     1.88
-Rodri                     Spain                6                     1.76
-Timothy Castagne          Belgium              2                     1.48
-Kylian Mbappe             France               8                     1.44
-Harry Kane                England              8                     1.43
-Issa Diop                 Morocco              3                     1.40
-Enzo Fernandez            Argentina            6                     1.38
-João Palhinha             Portugal             6                     1.35
-Dayot Upamecano           France               3                     1.30
-Lionel Messi              Argentina            8                     1.22
+Pape Gueye                Senegal              Midfielder            1.88
+Rodri                     Spain                Midfielder            1.76
+Timothy Castagne          Belgium              Defender              1.48
+Kylian Mbappe             France               Forward               1.44
+Harry Kane                England              Forward               1.43
+Issa Diop                 Morocco              Defender              1.40
+Enzo Fernandez            Argentina            Midfielder            1.38
+João Palhinha             Portugal             Midfielder            1.35
+Dayot Upamecano           France               Defender              1.30
+Lionel Messi              Argentina            Forward               1.22
+Michael Olise             France               Forward               1.22
+Mohamed Salah             Egypt                Forward               1.17
+Neymar                    Brazil               Forward               1.12
+Mateus Fernandes          Portugal             Midfielder            1.07
+Diego Gómez               Paraguay             Midfielder            1.01
+Tyrick Mitchell           England              Defender              1.00
+James Garner              England              Midfielder            0.98
+João Gomes                Brazil               Midfielder            0.98
+Erling Haaland            Norway               Forward               0.96
+Luis Diaz                 Colombia             Forward               0.90
+Elliot Anderson           England              Midfielder            0.89
+Neco Williams             Wales                Defender              0.84
